@@ -318,7 +318,7 @@ a {
 }
 .stories {
   text-align: center;
-  padding-bottom: 40px;
+  padding-bottom: 35px;
 }
 .stories__title {
   margin-top: 80px;
@@ -356,8 +356,25 @@ a {
   font-family: var(--a-font);
   text-decoration: underline;
 }
-.stories__block:last-child {
+.stories__block-last {
   padding-bottom: 40px;
 }
 .button-stories {
+}
+.footer {
+  text-align: center;
+
+  display: flex;
+  align-items: center;
+}
+.footer-text {
+  color: var(--a-color);
+  font-family: var(--e-font);
+  font-size: 1.6rem;
+  line-height: 2.1;
+  padding-bottom: 19px;
+  padding-top: 25px;
+}
+.social__block > a {
+  padding-left: 20px;
 }
