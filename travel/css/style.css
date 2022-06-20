@@ -316,3 +316,48 @@ a {
   font-family: var(--e-font);
   font-size: 2.4rem;
 }
+.stories {
+  text-align: center;
+  padding-bottom: 40px;
+}
+.stories__title {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+.stories__img {
+  border-radius: 16px;
+  width: 400px;
+  height: 250px;
+  margin-right: 40px;
+  margin-left: 120px;
+}
+.stories__block {
+  display: flex;
+  padding-bottom: 30px;
+}
+.stories__text {
+  max-width: 760px;
+  text-align: left;
+}
+.stories__block-title {
+  padding-bottom: 24px;
+  font-size: 3.5rem;
+  line-height: 4.2rem;
+  font-family: var(--c-font);
+  color: var(--b-color);
+}
+.stories__block-text {
+  font-size: 2rem;
+  line-height: 2.4rem;
+  font-family: var(--c-font);
+  color: var(--b-color);
+}
+.stories__block-span {
+  font-family: var(--a-font);
+  text-decoration: underline;
+}
+.stories__block:last-child {
+  padding-bottom: 40px;
+}
+.button-stories {
+}
