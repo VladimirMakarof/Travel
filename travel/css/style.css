@@ -62,7 +62,6 @@ a {
 .header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   padding-left: 120px;
   padding-right: 120px;
   background-color: var(--c-color);
@@ -71,8 +70,8 @@ a {
 .logo__section {
   display: flex;
   align-items: center;
-  padding-top: 25px;
-  padding-bottom: 34px;
+  padding-top: 27px;
+  padding-bottom: 25px;
 }
 .logo__section-text {
   font-size: 3.2rem;
@@ -80,11 +79,18 @@ a {
   color: var(--a-color);
   font-family: var(--d-font);
 }
+.logo__section-img {
+  margin-bottom: 4px;
+}
 .menu__section {
   display: flex;
   color: var(--a-color);
   font-size: 1.6rem;
+  line-height: 2.1rem;
+  letter-spacing: 0.4px;
   font-family: var(--f-font);
+  margin-left: 167px;
+  margin-top: 3px;
 }
 .button-main {
   display: inline-block;
@@ -100,7 +106,10 @@ a {
   margin-right: 42px;
 }
 .button-header {
-  padding: 10px 30px;
+  padding: 11px 30px 10px 30px;
+  margin-top: 3px;
+  margin-left: 198px;
+  font-size: 1.6rem;
 }
 .hero__title {
   color: var(--a-color);
@@ -108,14 +117,17 @@ a {
   font-family: var(--a-font);
   line-height: 9.6rem;
   margin: 0;
-  margin-bottom: 124px;
+  margin-bottom: 34px;
 }
 .hero__subtitle {
-  display: inline-block;
   color: var(--a-color);
   font-size: 2rem;
   font-family: var(--b-font);
+  font-weight: 700;
   margin-bottom: 46px;
+  margin-right: 2px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
 }
 .hero {
   max-width: 892px;
@@ -123,23 +135,33 @@ a {
   margin-top: 32px;
 }
 .search {
+  position: relative;
 }
 
-input[type="search"] {
+.input__hero-search {
   background: rgba(255, 255, 255, 0.7);
   min-height: 95px;
   min-width: 892px;
   border-radius: 16px;
-  color: var(--d-color);
-  border: none; /* Убираем рамку */
-  outline: none; /* Убираем свечение в Chrome и Safari */
-  -webkit-appearance: none; /* Убираем рамку в Chrome и Safari */
-
-  vertical-align: middle; /* Выравнивание по середине */
+  border: none;
 }
-input[type="submit"] {
-  width: 20px; /* Ширина кнопки */
-  height: 20px; /* Высота кнопки */
+.input__hero-search::placeholder {
+  color: var(--d-color);
+  font-size: 2.4rem;
+  font-family: var(--b-font);
+  padding-top: 32px;
+  padding-left: 41px;
+}
+.input__hero-submit {
   border: none; /* Убираем рамку */
-  background: url(images/video.png) no-repeat 50% 50%; /* Параметры фона */
+  background-color: var(--b-color);
+  position: absolute;
+  top: 17px;
+  right: 20px;
+  font-size: 2.4rem;
+  padding: 16px 32.5px;
+}
+.hero__search {
+  margin-bottom: 254px;
+  display: inline-block;
 }
