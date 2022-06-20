@@ -180,12 +180,24 @@ a {
 }
 .perfect-trip__icons {
   display: flex;
-  justify-content: space-around;
+  /* justify-content: space-around; */
 }
 .perfect-trip__block {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.perfect-trip__block:nth-child(1) {
+  margin-left: 130px;
+  max-width: 247px;
+}
+.perfect-trip__block:nth-child(2) {
+  margin-left: 232px;
+  max-width: 222px;
+}
+.perfect-trip__block:nth-child(3) {
+  margin-left: 160px;
+  max-width: 317px;
 }
 .perfect-trip__icon {
   width: 100px;
@@ -194,7 +206,7 @@ a {
   margin-bottom: 30px;
   background-repeat: no-repeat;
   background-position: center;
-  border-radius: 10px;
+  border-radius: 16px;
 }
 .perfect-trip__icon-1 {
   background-image: url(../img/svg/velo-icon.svg);
@@ -206,6 +218,7 @@ a {
   background-image: url(../img/svg/aero-icon.svg);
 }
 .perfect-trip__text {
+  font-family: var(--c-font);
   color: var(--b-color);
   font-size: 2rem;
   line-height: 2.4rem;
