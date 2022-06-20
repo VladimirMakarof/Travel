@@ -1,14 +1,17 @@
 /* fonts */
 @font-face {
   font-family: "Aleo-Bold";
+  font-weight: 700;
   src: url(../fonts/Aleo/Aleo-Bold.ttf);
 }
 @font-face {
   font-family: "Aleo-Italic";
+  font-weight: 400;
   src: url(../fonts/Aleo/Aleo-Italic.ttf);
 }
 @font-face {
   font-family: "Aleo-Regular";
+  font-weight: 400;
   src: url(../fonts/Aleo/Aleo-Regular.ttf);
 }
 @font-face {
@@ -17,10 +20,12 @@
 }
 @font-face {
   font-family: "RedHatText-Medium";
+  font-weight: 500;
   src: url(../fonts/Red_Hat_Text/RedHatText-Medium.ttf);
 }
 @font-face {
   font-family: "RedHatText-Regular";
+  font-weight: 400;
   src: url(../fonts/Red_Hat_Text/RedHatText-Regular.ttf);
 }
 /* root */
@@ -105,6 +110,9 @@ a {
 .menu__section li:nth-last-child(n + 2) {
   margin-right: 42px;
 }
+.menu__section > li {
+  cursor: pointer;
+}
 .button-header {
   padding: 11px 30px 10px 30px;
   margin-top: 3px;
@@ -169,13 +177,15 @@ a {
   text-align: center;
   margin-bottom: 97px;
 }
-.perfect-trip__title {
-  padding-top: 80px;
+.main-title {
   font-family: var(--e-font);
   font-size: 4rem;
   line-height: 5.3rem;
   color: var(--d-color);
   font-weight: 500;
+}
+.perfect-trip__title {
+  padding-top: 80px;
   padding-bottom: 40px;
 }
 .perfect-trip__icons {
@@ -222,4 +232,87 @@ a {
   color: var(--b-color);
   font-size: 2rem;
   line-height: 2.4rem;
+}
+.destinations {
+  text-align: center;
+}
+.destinations__title {
+  margin-bottom: 46px;
+}
+.slider-wrapper {
+  padding-bottom: 24px;
+  display: flex;
+  justify-content: space-between;
+}
+.slide-img-1 {
+  position: relative;
+  border-radius: 16px 10px 10px 16px;
+  width: 800px;
+  height: 800px;
+  background-position: right 69vw top;
+  background-image: url(../img/Destination-1.png);
+}
+.slide-img-2 {
+  position: relative;
+  width: 800px;
+  height: 800px;
+  background-image: url(../img/Destination-2.png);
+}
+.slide-img-3 {
+  position: relative;
+  border-radius: 16px;
+  width: 800px;
+  height: 800px;
+
+  background-image: url(../img/Destination-3.png);
+}
+.wrapper-slide-img-1 {
+  overflow: hidden;
+  width: 260px;
+}
+.wrapper-slide-img-3 {
+  overflow: hidden;
+  width: 260px;
+}
+.slide-text-1 {
+  position: absolute;
+  left: 15px;
+  bottom: 45px;
+}
+.slide-text-2 {
+  position: absolute;
+  left: 15px;
+  bottom: 45px;
+}
+.slide-text-3 {
+  position: absolute;
+  left: 15px;
+  bottom: 45px;
+}
+.slide-text {
+  color: var(--a-color);
+  font-family: var(--e-font);
+  font-size: 3.2rem;
+}
+.slider-pagination {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100px;
+}
+.slider-pagination > img {
+  cursor: pointer;
+  /* margin-left: 10px; */
+  margin-bottom: 36px;
+}
+.slider-pagination > img:nth-child(2) {
+}
+.button-slider {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 31px 10px 31px;
+  font-family: var(--e-font);
+  font-size: 2.4rem;
 }
