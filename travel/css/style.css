@@ -165,3 +165,48 @@ a {
   margin-bottom: 254px;
   display: inline-block;
 }
+.perfect-trip {
+  text-align: center;
+  margin-bottom: 97px;
+}
+.perfect-trip__title {
+  padding-top: 80px;
+  font-family: var(--e-font);
+  font-size: 4rem;
+  line-height: 5.3rem;
+  color: var(--d-color);
+  font-weight: 500;
+  padding-bottom: 40px;
+}
+.perfect-trip__icons {
+  display: flex;
+  justify-content: space-around;
+}
+.perfect-trip__block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.perfect-trip__icon {
+  width: 100px;
+  height: 100px;
+  background-color: var(--d-color);
+  margin-bottom: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 10px;
+}
+.perfect-trip__icon-1 {
+  background-image: url(../img/svg/velo-icon.svg);
+}
+.perfect-trip__icon-2 {
+  background-image: url(../img/svg/calend-icon.svg);
+}
+.perfect-trip__icon-3 {
+  background-image: url(../img/svg/aero-icon.svg);
+}
+.perfect-trip__text {
+  color: var(--b-color);
+  font-size: 2rem;
+  line-height: 2.4rem;
+}
