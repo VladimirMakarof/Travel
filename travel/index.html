@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
 
 <head>
   <meta charset="UTF-8">
@@ -20,49 +20,49 @@
         </div>
         <div class="logo__section-text">Travel Portal</div>
       </div>
-
-      <ul class="menu__section">
-        <li>How It Works</li>
-        <li>Plan Your Trip</li>
-        <li>Destinations</li>
-        <li>Travel Stories</li>
-      </ul>
-
+      <nav class="menu">
+        <ul class="menu__section">
+          <li><a class="menu__section-link" href="#part1">How It Works</a> </li>
+          <li><a class="menu__section-link" href="#part2">Plan Your Trip</a></li>
+          <li><a class="menu__section-link" href="#part3">Destinations</a></li>
+          <li><a class="menu__section-link" href="#part4">Travel Stories</a></li>
+        </ul>
+      </nav>
       <button class="button-main button-header">
         Login
       </button>
 
     </header>
     <main>
-      <section class="hero">
-        <h1 class="hero__title">Explore the beauty of the World</h1>
-        <p class="hero__subtitle">Receive personalized recommendations for countries, hotels, activities and
+      <section id="part1" class="preview">
+        <h1 class="preview__title">Explore the beauty of the World</h1>
+        <p class="preview__subtitle">Receive personalized recommendations for countries, hotels, activities and
           more</p>
-        <form class="hero__search">
+        <form class="preview__search">
           <div class="search">
-            <input class="input__hero-search" type="search" name="q" placeholder="What would you like to do?">
-            <input class="button-main input__hero-submit" type="submit" value="Start Planning">
+            <input class="input__preview-search" type="search" name="q" placeholder="What would you like to do?">
+            <button class="button-main input__preview-submit">Start Planning</button>
           </div>
         </form>
       </section>
-      <section class="perfect-trip">
-        <h2 class="main-title perfect-trip__title">3 STEPS TO THE PERFECT TRIP</h2>
-        <div class="perfect-trip__icons">
-          <div class="perfect-trip__block">
-            <div class="perfect-trip__icon perfect-trip__icon-1"></div>
-            <p class="perfect-trip__text">Tell us what you want to do</p>
+      <section id="part2" class="steps">
+        <h2 class="main-title steps__title">3 STEPS TO THE PERFECT TRIP</h2>
+        <div class="steps__icons">
+          <div class="steps__block">
+            <div class="steps__icon steps__icon-1"></div>
+            <p class="steps__text">Tell us what you want to do</p>
           </div>
-          <div class="perfect-trip__block">
-            <div class="perfect-trip__icon perfect-trip__icon-2"></div>
-            <p class="perfect-trip__text">Share us preferable dates</p>
+          <div class="steps__block">
+            <div class="steps__icon steps__icon-2"></div>
+            <p class="steps__text">Share us preferable dates</p>
           </div>
-          <div class="perfect-trip__block">
-            <div class="perfect-trip__icon perfect-trip__icon-3"></div>
-            <p class="perfect-trip__text">We will give you recommendations</p>
+          <div class="steps__block">
+            <div class="steps__icon steps__icon-3"></div>
+            <p class="steps__text">We will give you recommendations</p>
           </div>
         </div>
       </section>
-      <section class="destinations">
+      <section id="part3" class="destinations">
         <h2 class="main-title destinations__title">POPULAR DESTINATIONS</h2>
         <div class="slider">
           <div class="slider-wrapper">
@@ -98,7 +98,7 @@
             Find More</button>
         </div>
       </section>
-      <section class="stories">
+      <section id="part4" class="stories">
         <h2 class="main-title stories__title">TRAVEL STORIES</h2>
         <div class="stories__block">
           <img class="stories__img" src="./img/stories-img-1.jpg" alt="">
@@ -156,16 +156,30 @@
     </main>
     <footer>
       <section class="footer">
-        <p></p>
         <h3 class="footer-text">All Rights Reserved © Travel Portal</h3>
-        <div class="social__block">
-          <a href=""><img src="./img/svg/icons_instagram.svg" alt="instagram"></a>
-          <a href=""><img src="./img/svg/icons_video.svg" alt="video"></a>
-          <a href=""><img src="./img/svg/icons_twitter.svg" alt="twitter"></a>
-        </div>
+        <ul class="social__block">
+          <li><a href=""><img src="./img/svg/icons_instagram.svg" alt="instagram"></a></li>
+          <li><a href=""><img src="./img/svg/icons_video.svg" alt="video"></a></li>
+          <li><a href=""><img src="./img/svg/icons_twitter.svg" alt="twitter"></a></li>
+        </ul>
       </section>
     </footer>
   </div>
+
+  <script>
+    const smoothLinks = document.querySelectorAll('a[href^="#"]');
+    for (let smoothLink of smoothLinks) {
+      smoothLink.addEventListener('click', function (e) {
+        e.preventDefault();
+        const id = smoothLink.getAttribute('href');
+
+        document.querySelector(id).scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      });
+    };
+  </script>
 
 </body>
 

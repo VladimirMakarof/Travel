@@ -52,6 +52,7 @@
 html {
   font-size: 10px;
   line-height: 10px;
+  scroll-behavior: auto;
 }
 ul {
   list-style: none;
@@ -97,6 +98,12 @@ a {
   margin-left: 167px;
   margin-top: 3px;
 }
+.menu__section-link {
+  color: var(--a-color);
+}
+.menu__section-link:hover {
+  color: var(--b-color);
+}
 .button-main {
   display: inline-block;
   background-color: var(--b-color);
@@ -119,7 +126,7 @@ a {
   margin-left: 198px;
   font-size: 1.6rem;
 }
-.hero__title {
+.preview__title {
   color: var(--a-color);
   font-size: 8rem;
   font-family: var(--a-font);
@@ -127,7 +134,7 @@ a {
   margin: 0;
   margin-bottom: 34px;
 }
-.hero__subtitle {
+.preview__subtitle {
   color: var(--a-color);
   font-size: 2rem;
   font-family: var(--b-font);
@@ -137,7 +144,7 @@ a {
   line-height: 24px;
   letter-spacing: 0.5px;
 }
-.hero {
+.preview {
   max-width: 892px;
   margin-left: 120px;
   margin-top: 32px;
@@ -146,21 +153,21 @@ a {
   position: relative;
 }
 
-.input__hero-search {
+.input__preview-search {
   background: rgba(255, 255, 255, 0.7);
   min-height: 95px;
   min-width: 892px;
   border-radius: 16px;
   border: none;
 }
-.input__hero-search::placeholder {
+.input__preview-search::placeholder {
   color: var(--d-color);
   font-size: 2.4rem;
   font-family: var(--b-font);
   padding-top: 32px;
   padding-left: 41px;
 }
-.input__hero-submit {
+.input__preview-submit {
   border: none; /* Убираем рамку */
   background-color: var(--b-color);
   position: absolute;
@@ -169,11 +176,11 @@ a {
   font-size: 2.4rem;
   padding: 16px 32.5px;
 }
-.hero__search {
+.preview__search {
   margin-bottom: 254px;
   display: inline-block;
 }
-.perfect-trip {
+.steps {
   text-align: center;
   margin-bottom: 97px;
 }
@@ -184,32 +191,32 @@ a {
   color: var(--d-color);
   font-weight: 500;
 }
-.perfect-trip__title {
+.steps__title {
   padding-top: 80px;
   padding-bottom: 40px;
 }
-.perfect-trip__icons {
+.steps__icons {
   display: flex;
   /* justify-content: space-around; */
 }
-.perfect-trip__block {
+.steps__block {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.perfect-trip__block:nth-child(1) {
+.steps__block:nth-child(1) {
   margin-left: 130px;
   max-width: 247px;
 }
-.perfect-trip__block:nth-child(2) {
+.steps__block:nth-child(2) {
   margin-left: 232px;
   max-width: 222px;
 }
-.perfect-trip__block:nth-child(3) {
+.steps__block:nth-child(3) {
   margin-left: 160px;
   max-width: 317px;
 }
-.perfect-trip__icon {
+.steps__icon {
   width: 100px;
   height: 100px;
   background-color: var(--d-color);
@@ -218,16 +225,16 @@ a {
   background-position: center;
   border-radius: 16px;
 }
-.perfect-trip__icon-1 {
+.steps__icon-1 {
   background-image: url(../img/svg/velo-icon.svg);
 }
-.perfect-trip__icon-2 {
+.steps__icon-2 {
   background-image: url(../img/svg/calend-icon.svg);
 }
-.perfect-trip__icon-3 {
+.steps__icon-3 {
   background-image: url(../img/svg/aero-icon.svg);
 }
-.perfect-trip__text {
+.steps__text {
   font-family: var(--c-font);
   color: var(--b-color);
   font-size: 2rem;
@@ -366,7 +373,8 @@ a {
   text-align: center;
   display: flex;
   justify-content: flex-end;
-  padding-right: 100px;
+  padding-right: 120px;
+  /* padding-right: 100px; */
 }
 .footer-text {
   color: var(--a-color);
@@ -374,12 +382,13 @@ a {
   font-size: 1.6rem;
   line-height: 2.1;
   padding-bottom: 13px;
-  padding-right: 328px;
+  padding-right: 307px;
   padding-top: 31px;
 }
-.social__block > a {
-  padding-right: 18px;
+.social__block > li {
+  padding-left: 20px;
 }
 .social__block {
   padding-top: 30px;
+  display: flex;
 }
