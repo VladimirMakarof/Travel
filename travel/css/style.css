@@ -103,6 +103,7 @@ a {
 }
 .menu__section-link:hover {
   color: var(--b-color);
+  transition: all 0.3s;
 }
 .button-main {
   display: inline-block;
@@ -113,6 +114,44 @@ a {
   border-radius: 10px;
   cursor: pointer;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 3px rgba(13, 96, 111, 0.16);
+}
+.button-main:hover {
+  color: var(--b-color);
+  background-color: var(--a-color);
+  transition: all 0.3s;
+}
+.button-main:hover .svg-arrow-right {
+  fill: var(--b-color);
+  transition: all 0.3s;
+}
+.svg-arrow-right {
+  width: 40px;
+  height: 41px;
+  fill: var(--a-color);
+}
+.svg-instagram-icon {
+  width: 34px;
+  height: 34px;
+  fill: var(--a-color);
+}
+.svg-instagram-icon:hover {
+  fill: var(--b-color);
+}
+.svg-video-icon {
+  width: 35px;
+  height: 35px;
+  stroke: var(--a-color);
+}
+.svg-video-icon:hover path {
+  stroke: var(--b-color);
+}
+.svg-twitter-icon {
+  width: 34px;
+  height: 34px;
+  fill: var(--a-color);
+}
+.svg-twitter-icon:hover {
+  fill: var(--b-color);
 }
 .menu__section li:nth-last-child(n + 2) {
   margin-right: 42px;
@@ -375,6 +414,7 @@ input[type="search"] {
   padding-bottom: 40px;
 }
 .button-stories {
+  min-width: 228px;
 }
 .footer {
   text-align: center;
