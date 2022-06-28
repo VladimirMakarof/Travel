@@ -15,24 +15,27 @@
   <div class="container">
     <header class="header">
       <div class="logo__section">
-        <div class="logo__section-img">
+        <a class="logo__section-img">
           <img loading="lazy" src="./img/svg/logo.svg" class="image" width="30" height="30" alt="logo">
-        </div>
+        </a>
         <div class="logo__section-text">Travel Portal</div>
       </div>
-      <nav class="menu">
-        <ul class="menu__section">
-          <li><a class="menu__section-link" href="#part1">How It Works</a> </li>
-          <li><a class="menu__section-link" href="#part2">Plan Your Trip</a></li>
-          <li><a class="menu__section-link" href="#part3">Destinations</a></li>
-          <li><a class="menu__section-link" href="#part4">Travel Stories</a></li>
+      <nav class="menu nav" data-nav>
+        <ul class="menu__section nav__list">
+          <li class="nav__item"><a class="menu__section-link nav__link" href="#part1">How It Works</a> </li>
+          <li class="nav__item"><a class="menu__section-link nav__link" href="#part2">Plan Your Trip</a></li>
+          <li class="nav__item"><a class="menu__section-link nav__link" href="#part3">Destinations</a></li>
+          <li class="nav__item"><a class="menu__section-link nav__link" href="#part4">Travel Stories</a></li>
         </ul>
       </nav>
       <button class="button-main button-header">
         Login
       </button>
+      <button class="burger" data-burger aria-label="Open menu" aria-expanded="false">
+        <span class="burger__line"></span>
+      </button>
 
-    </header>
+      <!-- </header>
     <main>
       <section id="part1" class="preview">
         <h1 class="preview__title">Explore the beauty of the World</h1>
@@ -69,7 +72,7 @@
             <div class="slider-slide">
               <div class="wrapper-slide-img-1">
                 <div class="slide-img-1">
-                  <!-- <p class="slide-text slide-text-1">SPAIN</p> -->
+                  <p class="slide-text slide-text-1">SPAIN</p>
                 </div>
               </div>
             </div>
@@ -188,24 +191,12 @@
             </a></li>
         </ul>
       </section>
-    </footer>
-  </div>
+    </footer> 
+  </div> -->
 
-  <script>
-    const smoothLinks = document.querySelectorAll('a[href^="#"]');
-    for (let smoothLink of smoothLinks) {
-      smoothLink.addEventListener('click', function (e) {
-        e.preventDefault();
-        const id = smoothLink.getAttribute('href');
 
-        document.querySelector(id).scrollIntoView({
-          behavior: 'smooth',
-          block: 'start'
-        });
-      });
-    };
-  </script>
 
+      <script src="./js/script.js"></script>
 </body>
 
 </html>
